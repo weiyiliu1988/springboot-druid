@@ -16,11 +16,14 @@ GRANT ALL PRIVILEGES ON *.* TO ‘root’@'%’ IDENTIFIED BY ‘123’ WITH GRA
 
 docker exec -it containername /bin/bash
 
-mysql> desc test;
-+-------+----------+------+-----+---------+----------------+
-| Field | Type     | Null | Key | Default | Extra          |
-+-------+----------+------+-----+---------+----------------+
-| id    | int(4)   | NO   | PRI | NULL    | auto_increment |
-| name  | char(20) | NO   |     | NULL    |                |
-+-------+----------+------+-----+---------+----------------+
-2 rows in set (0.00 sec)
+mysql> desc test;<br />
++-------+----------+------+-----+---------+----------------+<br />
+| Field | Type     | Null | Key | Default | Extra          |<br />
++-------+----------+------+-----+---------+----------------+<br />
+| id    | int(4)   | NO   | PRI | NULL    | auto_increment |<br />
+| name  | char(20) | NO   |     | NULL    |                |<br />
++-------+----------+------+-----+---------+----------------+<br />
+2 rows in set (0.00 sec)<br />
+
+
+http://localhost:8081/druid/
