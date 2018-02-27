@@ -6,6 +6,8 @@ srpingboot-druid-mybatis(mysql)
 ## 启动镜像
 docker run --name=server-mysql -d -p 3306:3306 mysql/mysql-server
 
+## 初始密码生成
+docker logs mysql1 2>&1 | grep GENERATED
 user: root password:   &4SUh^0wV0D0PoMOJdiNUdRIx4N
 
 ## 修改数据库密码
