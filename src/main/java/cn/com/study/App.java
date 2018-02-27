@@ -32,4 +32,23 @@ public class App {
 			}
 		};
 	}
+
+	//
+	// // 配置mybatis的分页插件pageHelper
+	// @Bean
+	// public PageHelper pageHelper() {
+	// PageHelper pageHelper = new PageHelper();
+	// Properties properties = new Properties();
+	// properties.setProperty("reasonable", "true");
+	// properties.setProperty("supportMethodsArguments", "true");
+	// properties.setProperty("returnPageInfo", "check");
+	// properties.setProperty("params",
+	// "pageNum=pageNum;pageSize=pageSize;count=countSql;reasonable=reasonable;pageSizeZero=pageSizeZero");
+	// properties.setProperty("offsetAsPageNum", "true");
+	// properties.setProperty("rowBoundsWithCount", "true");
+	// properties.setProperty("reasonable", "true");
+	// // properties.setProperty("dialect", "mysql"); // mysql方言 可自动检测
+	// pageHelper.setProperties(properties);
+	// return pageHelper;
+	// }
 }

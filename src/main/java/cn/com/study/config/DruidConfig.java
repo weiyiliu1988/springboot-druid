@@ -17,6 +17,8 @@ import com.alibaba.druid.support.http.WebStatFilter;
  *
  */
 @Configuration
+// 配置文件简化设定方法
+// @ConfigurationProperties(prefix = "spring.datasource.druid")
 public class DruidConfig {
 
 	private Logger log = LoggerFactory.getLogger(DruidConfig.class);
