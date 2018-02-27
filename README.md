@@ -1,22 +1,22 @@
 # springboot-druid
 srpingboot-druid-mybatis(mysql)
 
-#mysql
+# mysql
 
-##启动镜像
+## 启动镜像
 docker run --name=server-mysql -d -p 3306:3306 mysql/mysql-server
 
 user: root password:   &4SUh^0wV0D0PoMOJdiNUdRIx4N
 
-##修改数据库密码
+## 修改数据库密码
 ALTER USER 'root'@'localhost' IDENTIFIED BY '123';
 
-##创建数据库
+## 创建数据库
 CREATE DATABASE IF NOT EXISTS test DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
-##赋予访问权限
+## 赋予访问权限
 GRANT ALL PRIVILEGES ON *.* TO ‘root’@'%’ IDENTIFIED BY ‘123’ WITH GRANT OPTION;
 
-#docker exec -it containername /bin/bash
+# docker exec -it containername /bin/bash
 
 <code>
 mysql> desc test;<br />
@@ -29,5 +29,5 @@ mysql> desc test;<br />
 2 rows in set (0.00 sec)<br />
 </code>
 
-#druid访问地址
+# druid访问地址
 http://localhost:8081/druid/
