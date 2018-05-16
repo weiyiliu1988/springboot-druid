@@ -2,7 +2,7 @@ FROM openjdk:latest
 COPY ./spring-test-0.0.1-SNAPSHOT.jar /spring_test.jar
 WORKDIR /
 EXPOSE 9001
-CMD ["java","-jar","/spring_test.jar","--spring.profiles.active=prod"]
+CMD ["java","-jar","/spring_test.jar","--spring.profiles.active=dev"]
 
 
 ##command

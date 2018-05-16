@@ -1,4 +1,5 @@
 target
+docker-config
 .classpath
 .project
 .settings
